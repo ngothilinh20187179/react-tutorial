@@ -5,7 +5,8 @@ import PostDetail from './PostDetail';
 import List from '../03-foundations/List';
 import Component from '../03-foundations/Component';
 import EventHandlingDemo from '../03-foundations/HandlingEvents';
-
+import LifecycleDemo from '../04-side-effect/Lifecycle';
+import DataFetching from '../04-side-effect/DataFetching';
 
 const AppRouter = () => {
   return (
@@ -19,6 +20,8 @@ const AppRouter = () => {
         <Route path="/list" element={<List />} />
         <Route path="/component" element={<Component />} />
         <Route path="/handling-events" element={<EventHandlingDemo />} />
+        <Route path="/lifecycle" element={<LifecycleDemo />} />
+        <Route path="/data-fetching" element={<DataFetching />} />
         <Route path="*" element={<h1>404 | Not Found</h1>} />
       </Routes>
     </>
