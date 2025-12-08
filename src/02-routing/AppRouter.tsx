@@ -7,6 +7,7 @@ import Component from '../03-foundations/Component';
 import EventHandlingDemo from '../03-foundations/HandlingEvents';
 import LifecycleDemo from '../04-side-effect/Lifecycle';
 import DataFetching from '../04-side-effect/DataFetching';
+import UseRefHook from '../05-others-hooks/useRefHook';
 
 const AppRouter = () => {
   return (
@@ -22,6 +23,7 @@ const AppRouter = () => {
         <Route path="/handling-events" element={<EventHandlingDemo />} />
         <Route path="/lifecycle" element={<LifecycleDemo />} />
         <Route path="/data-fetching" element={<DataFetching />} />
+        <Route path="/useRef" element={<UseRefHook />} />
         <Route path="*" element={<h1>404 | Not Found</h1>} />
       </Routes>
     </>
